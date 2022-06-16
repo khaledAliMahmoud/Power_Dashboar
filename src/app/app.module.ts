@@ -15,7 +15,9 @@ import { ElementsComponent } from './shared/elements/elements.component';
 import { NotFoundComponent } from './shared/not-found/not-found.component';
 import { LogOutComponent } from './shared/log-out/log-out.component';
 import { DashBoaredComponent } from './shared/dash-boared/dash-boared.component';
-import { DatePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { FormsModule } from '@angular/forms';
+import { RadarChartComponent } from './shared/radar-chart/radar-chart.component';
+import {ChartModule} from 'primeng/chart';
 
 @NgModule({
   declarations: [
@@ -32,12 +34,14 @@ import { DatePickerModule } from '@syncfusion/ej2-angular-calendars';
     NotFoundComponent,
     LogOutComponent,
     DashBoaredComponent,
+    RadarChartComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DatePickerModule
+    FormsModule,
+    ChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
