@@ -30,6 +30,10 @@ import { InputSwitchModule } from 'primeng/inputswitch';
 import { MenuModule } from 'primeng/menu';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { FormsModule } from '@angular/forms';
+import { RadarChartComponent } from './shared/radar-chart/radar-chart.component';
+// import {ChartModule} from 'primeng/chart';
+import { CalendarModule } from 'primeng/calendar';
 
 @NgModule({
   declarations: [
@@ -46,6 +50,7 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
     NotFoundComponent,
     LogOutComponent,
     DashBoaredComponent,
+    RadarChartComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,11 +65,14 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
     PanelMenuModule,
     SelectButtonModule,
     ConfirmDialogModule,
+    CalendarModule,
     TabViewModule,
     InputSwitchModule,
     MenuModule,
     TabMenuModule,
     ProgressSpinnerModule,
+    FormsModule,
+    // ChartModule
   ],
   providers: [DialogService],
   bootstrap: [AppComponent],
