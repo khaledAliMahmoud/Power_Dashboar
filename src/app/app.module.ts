@@ -16,6 +16,20 @@ import { NotFoundComponent } from './shared/not-found/not-found.component';
 import { LogOutComponent } from './shared/log-out/log-out.component';
 import { DashBoaredComponent } from './shared/dash-boared/dash-boared.component';
 import { DatePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MenubarModule } from 'primeng/menubar';
+import { AvatarModule } from 'primeng/avatar';
+import { SkeletonModule } from 'primeng/skeleton';
+import { DialogService } from 'primeng/dynamicdialog';
+import { BreadcrumbModule } from 'primeng/breadcrumb';
+import { PanelMenuModule } from 'primeng/panelmenu';
+import { SelectButtonModule } from 'primeng/selectbutton';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
+import { TabViewModule } from 'primeng/tabview';
+import { InputSwitchModule } from 'primeng/inputswitch';
+import { MenuModule } from 'primeng/menu';
+import { TabMenuModule } from 'primeng/tabmenu';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
 
 @NgModule({
   declarations: [
@@ -32,14 +46,27 @@ import { DatePickerModule } from '@syncfusion/ej2-angular-calendars';
     NotFoundComponent,
     LogOutComponent,
     DashBoaredComponent,
-
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    BrowserModule,
     AppRoutingModule,
-    DatePickerModule
+    DatePickerModule,
+    MenubarModule,
+    AvatarModule,
+    SkeletonModule,
+    BreadcrumbModule,
+    PanelMenuModule,
+    SelectButtonModule,
+    ConfirmDialogModule,
+    TabViewModule,
+    InputSwitchModule,
+    MenuModule,
+    TabMenuModule,
+    ProgressSpinnerModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [DialogService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

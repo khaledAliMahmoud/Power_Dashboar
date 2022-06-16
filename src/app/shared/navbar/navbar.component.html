@@ -1,23 +1,30 @@
 <div class="navbarContent">
+  <div class="monitored">
+    <i class="fa-solid fa-circle circle"></i>
+    <img src="../../../assets/Imgs/gas-station-svgrepo-com.svg" alt="" />
+    <h4>2/3</h4>
+    <div class="desc"><p>Monitored stations</p></div>
+  </div>
 
-<div class="monitored">
-<i class="fa-solid fa-circle circle"></i> <img src="../../../assets/Imgs/gas-station-svgrepo-com.svg" alt="">
- <h4>2/3</h4> <div class="desc"> <p>Monitored stations</p> </div>
-</div>
-
-<div class="update">
-  <i class="fa-solid fa-circle circle"></i> <i class="fa-solid fa-arrow-rotate-right arrow"></i>
-   <h4>20s</h4> <div class="desc"> <p>Last Update</p> </div>
+  <div class="update">
+    <i class="fa-solid fa-circle circle"></i>
+    <i class="fa-solid fa-arrow-rotate-right arrow"></i>
+    <h4>20s</h4>
+    <div class="desc"><p>Last Update</p></div>
   </div>
 
   <div class="periods">
-   <a href="#"> <p class="time">Today</p> </a>
-   <a href="#"> <p class="time">Yesterday</p> </a>
-   <a href="#"> <p class="time">Last Week</p> </a>
+    <a href="#"> <p class="time">Today</p> </a>
+    <a href="#"> <p class="time">Yesterday</p> </a>
+    <a href="#"> <p class="time">Last Week</p> </a>
   </div>
 
-  <!-- <div class="date">
-    <ejs-datepicker></ejs-datepicker>
-  </div> -->
-
+  <div class="p-field p-col-12 p-md-4">
+    <label for="icon">Icon</label>
+    <p-calendar
+      [(ngModel)]="date3"
+      [showIcon]="true"
+      inputId="icon"
+    ></p-calendar>
+  </div>
 </div>
