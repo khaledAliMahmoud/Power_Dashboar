@@ -15,7 +15,6 @@ import { ElementsComponent } from './shared/elements/elements.component';
 import { NotFoundComponent } from './shared/not-found/not-found.component';
 import { LogOutComponent } from './shared/log-out/log-out.component';
 import { DashBoaredComponent } from './shared/dash-boared/dash-boared.component';
-import { DatePickerModule } from '@syncfusion/ej2-angular-calendars';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenubarModule } from 'primeng/menubar';
 import { AvatarModule } from 'primeng/avatar';
@@ -32,8 +31,10 @@ import { TabMenuModule } from 'primeng/tabmenu';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { FormsModule } from '@angular/forms';
 import { RadarChartComponent } from './shared/radar-chart/radar-chart.component';
-// import {ChartModule} from 'primeng/chart';
 import { CalendarModule } from 'primeng/calendar';
+import {ChartModule} from 'primeng/chart';
+import {ToastModule} from 'primeng/toast';
+import { BarChartComponent } from './shared/bar-chart/bar-chart.component';
 
 @NgModule({
   declarations: [
@@ -51,13 +52,13 @@ import { CalendarModule } from 'primeng/calendar';
     LogOutComponent,
     DashBoaredComponent,
     RadarChartComponent,
+    BarChartComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
-    DatePickerModule,
     MenubarModule,
     AvatarModule,
     SkeletonModule,
@@ -72,7 +73,8 @@ import { CalendarModule } from 'primeng/calendar';
     TabMenuModule,
     ProgressSpinnerModule,
     FormsModule,
-    // ChartModule
+    ChartModule,
+    ToastModule
   ],
   providers: [DialogService],
   bootstrap: [AppComponent],

@@ -88,3 +88,43 @@
   background-color: #FF7F5C;
 color: #FFFFFF;
 }
+
+.p-field{
+  width: 32%;
+  height: 100%;
+  margin-left: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.startDate{
+  display: flex;
+}
+
+.p-field .startDate .arrowRight{
+  color: $primaryColor;
+  margin-right: 3%;
+  margin-top: 3%;
+}
+
+.p-field .startDate .mycalendar{
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0px;
+}
+
+.endtDate{
+  display: flex;
+}
+
+.p-field .endtDate .arrowRight{
+  color: $primaryColor;
+  margin-right: 3%;
+  margin-top: 3%;
+}
+
+.p-field .endtDate .mycalendar{
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0px;
+}

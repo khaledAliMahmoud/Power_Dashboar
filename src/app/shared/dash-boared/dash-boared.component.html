@@ -1,10 +1,11 @@
 <div class="page">
-  <!-- <div class="mainContent">
 
-</div> -->
 <div class="navBAr">
   <app-navbar></app-navbar>
 </div>
+
+<!-- ------------------------------------------NavBar ------------------------------>
+
 
 <div class="boxes">
 
@@ -50,11 +51,76 @@
 
 </div>
 
+<div class="columnChart">
+
+  <div class="row col-md-12 mylinks">
+    <div class="links">
+      <a href="#"> <i class="fa-solid fa-chart-column Graph"></i> Graph</a>
+      <a href="#"> <i class="fa-solid fa-bars List"></i> List</a>
+    </div>
+
+  </div>
+  <div class="row col-md-12 barChart">
+    <div class="row col-md-12">
+      <div class="desc">
+        <p>Stations Activates Overview</p>
+        <div>
+          <a href="#">Sales</a>
+          <a href="#">Transaction</a>
+          <a href="#">Value</a>
+          <a href="#">Compression</a>
+        </div>
+      </div>
+    </div>
+    <div class="row col-md-12">
+      <app-bar-chart></app-bar-chart>
+    </div>
+  </div>
+</div>
 
 <!-- ------------------------------------------Boxes ------------------------------>
 
 <div class="radarChart">
-  <app-radar-chart></app-radar-chart>
+  <div class="chart">
+    <app-radar-chart></app-radar-chart>
+  </div>
+
+  <h5>Sales by Station</h5>
+
+  <div class="stations">
+
+    <div class="station1">
+
+    <img src="../../../assets/Imgs/gas-station-svgrepo-com.svg" alt="" />
+    <p class="text1">Station Name</p>
+    <p class="text2">62,721m<sup>3</sup></p>
+
+      <div class="progres"> </div>
+
+    </div>
+
+    <div class="station1 my-3">
+
+      <img src="../../../assets/Imgs/gas-station-svgrepo-com.svg" alt="" />
+      <p class="text1">Station Name</p>
+      <p class="text2">62,721m<sup>3</sup></p>
+
+        <div class="progres"> </div>
+
+      </div>
+
+      <div class="station2 my-3">
+
+        <img src="../../../assets/Imgs/gas-station-svgrepo-com.svg" alt="" />
+        <p class="text1">Station Name</p>
+        <p class="text2">62,721m<sup>3</sup></p>
+
+          <div class="progres"> </div>
+
+        </div>
+
+  </div>
+
 </div>
 
 

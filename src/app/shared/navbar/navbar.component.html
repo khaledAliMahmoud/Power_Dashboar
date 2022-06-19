@@ -12,19 +12,21 @@
     <h4>20s</h4>
     <div class="desc"><p>Last Update</p></div>
   </div>
-
+  <!-- [ngStyle]="{'background-color': today ==='true' ? '#FF7F5C' :''}"  -->
   <div class="periods">
-    <a href="#"> <p class="time">Today</p> </a>
+    <a href="#" (click)="todayBtn()"> <p class="time">Today</p> </a>
     <a href="#"> <p class="time">Yesterday</p> </a>
     <a href="#"> <p class="time">Last Week</p> </a>
   </div>
 
   <div class="p-field p-col-12 p-md-4">
-    <label for="icon">Icon</label>
-    <p-calendar
-      [(ngModel)]="date3"
-      [showIcon]="true"
-      inputId="icon"
-    ></p-calendar>
+    <!-- <p-calendar
+      [(ngModel)]="date3" [showIcon]="true" inputId="icon" class="mycalendar"></p-calendar> -->
+      <div class="startDate">
+        <i class="fa-solid fa-caret-right arrowRight"></i> <input type="date" class="mycalendar form-control">
+      </div>
+      <div class="endtDate">
+        <i class="fa-solid fa-caret-right arrowRight"></i> <input type="date" class="mycalendar form-control">
+      </div>
   </div>
 </div>
