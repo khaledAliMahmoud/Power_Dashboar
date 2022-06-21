@@ -1,3 +1,4 @@
+import { DispenserComponent } from './shared/dispenser/dispenser.component';
 import { LogOutComponent } from './shared/log-out/log-out.component';
 import { DashBoaredComponent } from './shared/dash-boared/dash-boared.component';
 import { LogUpComponent } from './shared/log-up/log-up.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:"notifications", component:NotificationsComponent},
   {path:"elements", component:ElementsComponent},
   {path:"dashboared", component:DashBoaredComponent},
+  {path:"dispenser", component:DispenserComponent},
   {path:"login", component:LogInComponent},
   {path:"logup", component:LogUpComponent},
   {path:"logout", component:LogOutComponent},

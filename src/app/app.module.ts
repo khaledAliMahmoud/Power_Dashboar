@@ -35,6 +35,8 @@ import { CalendarModule } from 'primeng/calendar';
 import {ChartModule} from 'primeng/chart';
 import {ToastModule} from 'primeng/toast';
 import { BarChartComponent } from './shared/bar-chart/bar-chart.component';
+import { BoxesComponent } from './shared/boxes/boxes.component';
+import { DispenserComponent } from './shared/dispenser/dispenser.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +55,8 @@ import { BarChartComponent } from './shared/bar-chart/bar-chart.component';
     DashBoaredComponent,
     RadarChartComponent,
     BarChartComponent,
+    BoxesComponent,
+    DispenserComponent,
   ],
   imports: [
     BrowserModule,

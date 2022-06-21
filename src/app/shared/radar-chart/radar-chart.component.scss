@@ -1,0 +1,101 @@
+@import "../../../assets/scss/varibles.scss";
+
+.radarCharts{
+  width: 70%;
+  margin-left: 15%;
+}
+
+.radarStations{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3%;
+}
+
+.stations {
+  width: 100%;
+  margin-top: 3%;
+}
+
+.station1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.station1 img {
+  margin-right: 3%;
+}
+
+.station1 .text1 {
+  color: $textColor;
+  font-size: 16px;
+  margin-top: 3%;
+  margin-right: 5%;
+  font-weight: bold;
+}
+
+.station1 .text2 {
+  color: $textColor;
+  margin-top: 3%;
+  margin-right: 4%;
+  font-weight: bold;
+}
+
+.station1 .progres {
+  width: 75%;
+  height: 6px;
+  background-color: #f4dbd4;
+  border-radius: 20px 20px 20px 20px;
+  margin-top: 2%;
+  position: relative;
+}
+
+.station1 .progres::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  border-radius: 20px 20px 20px 20px;
+  background-color: $primaryColor;
+}
+
+.station2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.station2 img {
+  margin-right: 3%;
+}
+
+.station2 .text1 {
+  color: $textColor;
+  font-size: 16px;
+  margin-top: 3%;
+  margin-right: 15%;
+  font-weight: bold;
+}
+
+.station2 .text2 {
+  color: $textColor;
+  margin-top: 3%;
+  margin-right: 4%;
+  font-weight: bold;
+  color: #B9CDE2;
+}
+
+.station2 .progres {
+  width: 75%;
+  height: 6px;
+  background-color: #b9cde2;
+  border-radius: 20px 20px 20px 20px;
+  margin-top: 2%;
+  position: relative;
+}
