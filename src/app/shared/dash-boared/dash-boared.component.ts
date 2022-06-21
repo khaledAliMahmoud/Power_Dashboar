@@ -7,7 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashBoaredComponent implements OnInit {
 
+  shot:string ;
+  showStations:boolean = false;
+  showBarchart:boolean = false;
+
   constructor() { }
+
+  activBtn(data){
+    this.shot = data
+  }
+
+  stationBtn(){
+    this.showStations = true
+    this.showBarchart = false
+  }
+
+  barChart(){
+    this.showBarchart = true
+    this.showStations = false
+
+  }
 
   ngOnInit(): void {
   }

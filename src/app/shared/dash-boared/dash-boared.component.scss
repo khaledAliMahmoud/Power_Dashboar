@@ -5,19 +5,29 @@
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-color: #F9F5F3;
+  background-color: #f9f5f3;
   padding: 0%;
+  overflow: hidden;
 }
 
-.navBAr{
+.navBAr {
   width: 100%;
   height: 11.5%;
   background-color: $w;
   margin-bottom: 0% !important;
 }
 
-.boxes {
+.dashBoard {
+  width: 100%;
+  display: flex;
+}
+
+.content {
   width: 70%;
+}
+
+.boxes {
+  width: 100%;
   height: 40%;
   // background-color: burlywood;
   display: flex;
@@ -239,61 +249,61 @@
 
 // ===========================================Boxes======================================
 
-.radarChart{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   }
-
-   .chart{
-    width: 60%;
-    margin-top: 3%;
-    margin-bottom: 10%;
-   }
-
-   .stations{
-    width: 100%;
-    margin-top: 5%;
-   }
-
-   .station1{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-   }
-
-   .station1 img{
-    margin-right: 3%;
-   }
-
-   .station1 .text1{
-    color: $textColor;
-    font-size: 16px;
-    margin-top: 3%;
-    margin-right: 5%;
-    font-weight: bold;
-   }
-
-   .station1 .text2{
-    color: $textColor;
-    margin-top: 3%;
-    margin-right: 4%;
-    font-weight: bold;
-   }
-
-   .station1 .progres{
-  width: 75%;
-  height: 6px;
-  background-color: #F4DBD4;
-  border-radius: 20px 20px 20px 20px;
-  margin-top: 2%;
-  position:relative ;
+.radarChart {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.station1 .progres::after{
+.chart {
+  width: 60%;
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+
+.stations {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.station1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.station1 img {
+  margin-right: 3%;
+}
+
+.station1 .text1 {
+  color: $textColor;
+  font-size: 16px;
+  margin-top: 3%;
+  margin-right: 5%;
+  font-weight: bold;
+}
+
+.station1 .text2 {
+  color: $textColor;
+  margin-top: 3%;
+  margin-right: 4%;
+  font-weight: bold;
+}
+
+.station1 .progres {
+  width: 75%;
+  height: 6px;
+  background-color: #f4dbd4;
+  border-radius: 20px 20px 20px 20px;
+  margin-top: 2%;
+  position: relative;
+}
+
+.station1 .progres::after {
   content: "";
   position: absolute;
   width: 40%;
@@ -302,101 +312,210 @@
   background-color: $primaryColor;
 }
 
-.station2{
+.station2 {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   box-sizing: border-box;
- }
+}
 
- .station2 img{
+.station2 img {
   margin-right: 3%;
   // margin-left: 3%;
- }
+}
 
- .station2 .text1{
+.station2 .text1 {
   color: $textColor;
   font-size: 16px;
   margin-top: 3%;
   margin-right: 5%;
   font-weight: bold;
- }
+}
 
- .station2 .text2{
+.station2 .text2 {
   color: $textColor;
   margin-top: 3%;
   margin-right: 4%;
   font-weight: bold;
- }
+}
 
- .station2 .progres{
-width: 75%;
-height: 6px;
-background-color: #B9CDE2;
-border-radius: 20px 20px 20px 20px;
-margin-top: 2%;
-position:relative ;
+.station2 .progres {
+  width: 75%;
+  height: 6px;
+  background-color: #b9cde2;
+  border-radius: 20px 20px 20px 20px;
+  margin-top: 2%;
+  position: relative;
 }
 
 // --------------------------------------------radarChart--------------------------------------------
 
-.columnChart{
-  // background-color: chartreuse;
-  width: 70%;
-  height: calc(100% - 51.5%);
-  box-sizing: border-box;
-}
-
-.columnChart .mylinks{
+.mylinks {
   margin-top: 1%;
   margin-left: 0%;
-  margin-bottom: 0%;
+  margin-bottom: 2%;
+  padding: 0%;
+  box-sizing: border-box;
   display: flex;
-justify-content: end;
-// background-color: #00cbc0;
-
+  justify-content: end;
 }
 
-.columnChart .links{
+.mylinks .links{
+  display: flex;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0%;
+  width: 22%;
+}
+
+.mylinks .links a{
+  width: 50%;
+  padding: 1%;
+  cursor: pointer;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.links a:hover {
+  background-color: $primaryColor;
+  color: white;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.columnChart {
+  width: 100%;
+  height: calc(100% - 51.5%);
+  padding-top: 1%;
+  box-sizing: border-box;
+  background-color: white;
+  overflow: auto;
+}
+
+.columnChart::-webkit-scrollbar{
+  width: 5px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.columnChart::-webkit-scrollbar-track{
+  background-color: lightgray;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.columnChart::-webkit-scrollbar-thumb{
+  background-color: $primaryColor;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.activeLink {
+  background-color: $primaryColor;
+  color: white !important;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.columnChart .links {
   width: 25%;
-display: flex;
-justify-content: space-around;
-margin-top: 0%;
-margin-bottom: 0%;
-margin-right: 3%;
-border-radius: 30px 30px 30px 30px;
-background-color: white;
-text-align: center;
-padding: 0%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-right: 3%;
+  border-radius: 30px 30px 30px 30px;
+  background-color: white;
+  text-align: center;
+  padding: 0%;
 }
 
-.links a{
+.links a {
   width: 50%;
   text-decoration: none;
   color: black;
 }
 
-.links a:hover{
+.links a:active {
   background-color: $primaryColor;
-color: white;
-border-radius: 30px 30px 30px 30px;
-
+  border-radius: 30px 30px 30px 30px;
+  color: white;
 }
 
-.links a:active{
-  background-color: $primaryColor;
-border-radius: 30px 30px 30px 30px;
-color: white;
+.stationModels{
+  width: 100%;
+  padding-top: 1%;
+  background-color: #00cbc0;
 }
 
-.barChart{
+.stationModel {
+  width: 100%;
+  height: 60%;
+  margin-left: 0%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.head {
+  display: flex;
+  width: 95%;
+  height: 22%;
+  margin-bottom: 1%;
+  padding-bottom: 1%;
+  border-bottom: 1px solid lightgray;
+}
+
+.head .title {
+  display: flex;
+  align-items: center;
+}
+
+.head .circle {
+  color: $primaryColor;
+  font-size: 11px;
+  margin-right: 2%;
+}
+
+.head img {
+  width: 8%;
+  margin-right: 2%;
+}
+
+.head p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0%;
+  color: $textColor;
+}
+
+.options {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.line1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0%;
+}
+
+.line1 p {
+  margin-right: 7%;
+  font-size: 12px;
+}
+
+.line1 span {
+  font-size: 14px;
+  color: $textColor;
+}
+
+// =====================================================StationModel===================================
+
+.barChart {
   width: 100%;
   margin-left: 0%;
-  // background-color: red;
 }
 
-.barChart .desc{
+.barChart .desc {
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -406,13 +525,13 @@ color: white;
   padding: 0%;
 }
 
-.barChart .desc a{
+.barChart .desc a {
   text-decoration: none;
   color: black;
-  margin: 4%;
+  margin: 3%;
 }
 
-.barChart .desc a:hover{
+.barChart .desc a:hover {
   color: $primaryColor;
   border-bottom: 2px solid $primaryColor;
 }

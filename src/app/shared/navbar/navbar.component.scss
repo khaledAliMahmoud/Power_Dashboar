@@ -76,6 +76,7 @@
   text-decoration: none;
   color: #3D5161;
   width: calc(100% / 3);
+  cursor: pointer;
   border-radius: 30px 30px 30px 30px;
 }
 
@@ -89,42 +90,25 @@
 color: #FFFFFF;
 }
 
+.activeLink{
+  background-color: $primaryColor;
+  color: white !important;
+}
+
 .p-field{
-  width: 32%;
+  width: 35%;
   height: 100%;
   margin-left: 3%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0%;
 }
 
-.startDate{
-  display: flex;
-}
-
-.p-field .startDate .arrowRight{
+.p-field .arrowRight{
   color: $primaryColor;
-  margin-right: 3%;
-  margin-top: 3%;
 }
 
-.p-field .startDate .mycalendar{
-  border: none;
-  border-bottom: 1px solid black;
-  border-radius: 0px;
-}
-
-.endtDate{
-  display: flex;
-}
-
-.p-field .endtDate .arrowRight{
-  color: $primaryColor;
-  margin-right: 3%;
-  margin-top: 3%;
-}
-
-.p-field .endtDate .mycalendar{
-  border: none;
-  border-bottom: 1px solid black;
-  border-radius: 0px;
+.p-field .mycalendar{
+  margin: 3% !important;
 }

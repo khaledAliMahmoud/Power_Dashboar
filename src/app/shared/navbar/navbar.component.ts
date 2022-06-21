@@ -8,22 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   date3: Date = new Date;
 
-  today:boolean = false;
-  yesterdy:boolean = false;
-  week:boolean = false;
+  shot:string ;
+
   constructor() {}
 
-todayBtn(){
-  this.today = true
+activBtn(data){
+  this.shot = data
 }
 
-yesterdyBtn(){
-  this.yesterdy = true
-}
 
-weekBtn(){
-  this.week = true
-}
 
   ngOnInit(): void {}
 }
