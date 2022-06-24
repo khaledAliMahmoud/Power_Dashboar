@@ -1,3 +1,7 @@
+import { OperationComponent } from './shared/operation/operation.component';
+import { LineChartComponent } from './shared/line-chart/line-chart.component';
+import { ProgressChartComponent } from './shared/progress-chart/progress-chart.component';
+import { BoxesComponent } from './shared/boxes/boxes.component';
 import { DispenserComponent } from './shared/dispenser/dispenser.component';
 import { LogOutComponent } from './shared/log-out/log-out.component';
 import { DashBoaredComponent } from './shared/dash-boared/dash-boared.component';
@@ -19,7 +23,6 @@ const routes: Routes = [
   {path:"notifications", component:NotificationsComponent},
   {path:"elements", component:ElementsComponent},
   {path:"dashboared", component:DashBoaredComponent},
-  {path:"dispenser", component:DispenserComponent},
   {path:"login", component:LogInComponent},
   {path:"logup", component:LogUpComponent},
   {path:"logout", component:LogOutComponent},

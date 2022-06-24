@@ -1,1 +1,32 @@
-<p>control-room works!</p>
+<div class="controlRoom">
+  <div class="tabs">
+    <div
+      class="tab"
+      [ngClass]="{ activeLink: active == 'finance' }"
+      (click)="activeBtn('finance')"
+    >
+      Finance
+    </div>
+    <div
+      class="tab"
+      [ngClass]="{ activeLink: active == 'operation' }"
+      (click)="activeBtn('operation')"
+    >
+      Operation
+    </div>
+  </div>
+
+  <div *ngIf="active == 'finance'" class="content1">
+    <div class="left">
+      <app-boxes></app-boxes>
+      <app-line-chart></app-line-chart>
+    </div>
+    <div class="right">
+      <app-progress-chart></app-progress-chart>
+    </div>
+
+  </div>
+
+<div class="content2" *ngIf="active == 'operation'">
+  <app-operation></app-operation>
+</div> -->

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashBoaredComponent implements OnInit {
 
-  shot:string ;
+  shot:string = "Graph" ;
   showStations:boolean = false;
   showBarchart:boolean = false;
 

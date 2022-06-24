@@ -1,4 +1,5 @@
-import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import {  NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -37,6 +38,11 @@ import {ToastModule} from 'primeng/toast';
 import { BarChartComponent } from './shared/bar-chart/bar-chart.component';
 import { BoxesComponent } from './shared/boxes/boxes.component';
 import { DispenserComponent } from './shared/dispenser/dispenser.component';
+import { LineChartComponent } from './shared/line-chart/line-chart.component';
+import { ProgressChartComponent } from './shared/progress-chart/progress-chart.component';
+import { CommonModule } from '@angular/common';
+import { OperationComponent } from './shared/operation/operation.component';
+
 
 @NgModule({
   declarations: [
@@ -57,6 +63,9 @@ import { DispenserComponent } from './shared/dispenser/dispenser.component';
     BarChartComponent,
     BoxesComponent,
     DispenserComponent,
+    LineChartComponent,
+    ProgressChartComponent,
+    OperationComponent,
   ],
   imports: [
     BrowserModule,
@@ -78,7 +87,9 @@ import { DispenserComponent } from './shared/dispenser/dispenser.component';
     ProgressSpinnerModule,
     FormsModule,
     ChartModule,
-    ToastModule
+    ToastModule,
+    CommonModule,
+    RouterModule,
   ],
   providers: [DialogService],
   bootstrap: [AppComponent],

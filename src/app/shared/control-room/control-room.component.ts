@@ -7,7 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ControlRoomComponent implements OnInit {
 
+  active:string = "finance" ;
+  activeIcon:string = "Icon1";
+  activeBarLink:string = "sales";
+
   constructor() { }
+
+
+  activeBtn(data){
+    this.active = data
+  }
+
+  IconBtn(data){
+    this.activeIcon = data
+  }
+
+  linkBar(data){
+    this.activeBarLink = data
+  }
 
   ngOnInit(): void {
   }

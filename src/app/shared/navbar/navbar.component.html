@@ -1,4 +1,4 @@
-<div class="navbarContent">
+<div class="navbarContent col-12">
   <div class="monitored">
     <i class="fa-solid fa-circle circle"></i>
     <img src="../../../assets/Imgs/gas-station-svgrepo-com.svg" alt="" />
@@ -12,7 +12,7 @@
     <h4>20s</h4>
     <div class="desc"><p>Last Update</p></div>
   </div>
-  
+
   <div class="periods">
     <a  [ngClass]="{'activeLink': shot === 'Today'}" (click)="activBtn('Today')"> <p class="time">Today</p> </a>
     <a  [ngClass]="{'activeLink': shot === 'Yesterday'}" (click)="activBtn('Yesterday')"> <p class="time">Yesterday</p> </a>

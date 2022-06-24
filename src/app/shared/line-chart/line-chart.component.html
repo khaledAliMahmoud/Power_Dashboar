@@ -1,0 +1,24 @@
+
+  <div class="lineBar">
+    <div class="head ">
+      <div class="part1"><p>Stations Activates Overview</p></div>
+      <div class="part2">
+        <p [ngClass]="{'activeBarLink' : activeBarLink =='sales'}" (click)="linkBar('sales')">Sales</p>
+        <p [ngClass]="{'activeBarLink' : activeBarLink =='transaction'}" (click)="linkBar('transaction')">Transaction</p>
+        <p [ngClass]="{'activeBarLink' : activeBarLink =='value'}" (click)="linkBar('value')">Value</p>
+      </div>
+      <div class="part3">
+       <p [ngClass]="{'activeIcon' : activeIcon =='Icon1'}" (click)="IconBtn('Icon1')"> <i class="fa-solid fa-chart-line"></i> </p>
+       <p [ngClass]="{'activeIcon' : activeIcon =='Icon2'}" (click)="IconBtn('Icon2')">  <i class="fa-solid fa-chart-column"></i> </p>
+       <p [ngClass]="{'activeIcon' : activeIcon =='Icon3'}" (click)="IconBtn('Icon3')">  <i class="fa-solid fa-list-ul"></i> </p>
+       <p> <i class="fa-solid fa-ellipsis"></i> </p>
+      </div>
+    </div>
+    <div class="linechart">
+      <div id="chart-container">
+        <p-chart type="line" [data]="data" [height]="180" (onDataSelect)="selectData($event)"></p-chart>
+          </div>
+    </div>
+
+  </div>
+
