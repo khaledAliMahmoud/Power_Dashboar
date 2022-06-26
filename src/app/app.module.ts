@@ -42,6 +42,10 @@ import { LineChartComponent } from './shared/line-chart/line-chart.component';
 import { ProgressChartComponent } from './shared/progress-chart/progress-chart.component';
 import { CommonModule } from '@angular/common';
 import { OperationComponent } from './shared/operation/operation.component';
+import { StationDetails1Component } from './shared/station-details1/station-details1.component';
+import { StationDetails2Component } from './shared/station-details2/station-details2.component';
+import { RadarComponent } from './shared/radar/radar.component';
+import { OperationTableComponent } from './shared/operation-table/operation-table.component';
 
 
 @NgModule({
@@ -66,6 +70,10 @@ import { OperationComponent } from './shared/operation/operation.component';
     LineChartComponent,
     ProgressChartComponent,
     OperationComponent,
+    StationDetails1Component,
+    StationDetails2Component,
+    RadarComponent,
+    OperationTableComponent,
   ],
   imports: [
     BrowserModule,

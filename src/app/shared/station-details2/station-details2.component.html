@@ -1,0 +1,49 @@
+
+  <div class="lineBar">
+    <div class="head ">
+      <div class="part1"><p>Stations Activates Overview</p></div>
+      <div class="part2">
+        <p [ngClass]="{'activeBarLink' : activeBarLink =='Compressor'}" (click)="linkBar('Compressor')">Compressor STATUS</p>
+        <p [ngClass]="{'activeBarLink' : activeBarLink =='dispenser'}" (click)="linkBar('dispenser')">dispenser dETAILS</p>
+      </div>
+      <div class="part3">
+       <p [ngClass]="{'activeIcon' : activeIcon =='Icon2'}" (click)="IconBtn('Icon2')">  <i class="fa-solid fa-chart-column"></i> </p>
+       <p [ngClass]="{'activeIcon' : activeIcon =='Icon3'}" (click)="IconBtn('Icon3')">  <i class="fa-solid fa-list-ul"></i> </p>
+       <p> <i class="fa-solid fa-ellipsis"></i> </p>
+      </div>
+    </div>
+    <div class="linechart">
+      <app-radar></app-radar>
+      <div class="progressBar">
+
+        <div class="bar">
+
+        <div>
+          <div class="bar1"></div>
+          <p>Idle</p>
+        </div>
+        <div>
+          <div class="bar2"></div>
+          <p>compression</p>
+        </div>
+
+          <div>
+          <div class="bar3"></div>
+          <p>recirculating</p>
+        </div>
+
+          <div>
+          <div class="bar4"></div>
+          <p>others</p>
+        </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+

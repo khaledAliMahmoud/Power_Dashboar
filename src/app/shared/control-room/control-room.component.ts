@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ControlRoomComponent implements OnInit {
 
-  active:string = "finance" ;
+  active:string = "operation" ;
   activeIcon:string = "Icon1";
   activeBarLink:string = "sales";
 
