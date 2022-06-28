@@ -3,7 +3,6 @@
     <div class="head ">
       <div class="part1"><p>Stations Activates Overview</p></div>
       <div class="part2">
-        <p [ngClass]="{'activeBarLink' : activeBarLink =='PRESSURE'}" (click)="linkBar('PRESSURE')">PRESSURE</p>
         <p [ngClass]="{'activeBarLink' : activeBarLink =='KPI'}" (click)="linkBar('KPI')">KPI</p>
         <p [ngClass]="{'activeBarLink' : activeBarLink =='TEMORETURE'}" (click)="linkBar('TEMORETURE')">TEMORETURE</p>
       </div>
@@ -14,19 +13,49 @@
        <p> <i class="fa-solid fa-ellipsis"></i> </p>
       </div>
     </div>
-    <div class="linechart">
+    <div class="linechart" *ngIf="!showKpi">
 
-      <!-- <div>
-        <rg-gauge-chart
-          [canvasWidth]="canvasWidth"
-          [needleValue]="50"
-          [bottomLabel]=""
-          [centralLabel]="centralLabel"
-          [options]="options"
-          [name]="Gauge_chart"
-          [bottomLabel]="bottomLabel">
-        </rg-gauge-chart>
-      </div> -->
+      <div class="chart">
+        <p-chart type="pie" [data]="data" [height]="100"></p-chart>
+        <p class="Temperture">Inlet Temperture</p>
+        <span>100 Pa</span>
+      </div>
+
+      <div class="chart">
+        <p-chart type="pie" [data]="data" [height]="100"></p-chart>
+        <p class="Temperture">Oil Temperture</p>
+        <span>100 Pa</span>
+      </div>
+
+      <div class="chart">
+        <p-chart type="pie" [data]="data" [height]="100"></p-chart>
+        <p class="Temperture">stages Temperture</p>
+        <span>100 Pa avg</span>
+      </div>
+
+
+    </div>
+
+    <div class="linechart" *ngIf="showKpi">
+
+      <div class="chart">
+        <p-chart type="pie" [data]="data" [height]="100"></p-chart>
+        <p>Inlet Temperture</p>
+        <span>100 Pa</span>
+      </div>
+
+      <div class="chart">
+        <h3>4322</h3>
+        <p class="total">Total working </p>
+        <p class="total">Time</p>
+      </div>
+
+      <div class="chart">
+        <h3>5334</h3>
+        <p class="total">Total Power </p>
+        <p class="total">On Time</p>
+      </div>
+
 
     </div>
 

@@ -1,0 +1,82 @@
+@import "../../../assets/scss/varibles.scss";
+
+.page{
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+}
+
+.stationModels{
+  width: 100%;
+  height: 100%;
+  padding-top: 1%;
+  margin: 0%;
+}
+
+.stationModel {
+  width: 98%;
+  margin-left: 0%;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  padding-top: 3%;
+  display: flex;
+  justify-content: center;
+  background-color: $w;
+}
+
+.head {
+  display: flex;
+  width: 95%;
+  height: 22%;
+  margin-bottom: 1%;
+  padding-bottom: 1%;
+  border-bottom: 1px solid lightgray;
+}
+
+.head .title {
+  display: flex;
+  align-items: center;
+}
+
+.head .circle {
+  color: $primaryColor;
+  font-size: 11px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-right: 2%;
+}
+
+.head img {
+  width: 8%;
+  margin-right: 2%;
+}
+
+.head p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0%;
+  color: $textColor;
+}
+
+.options {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.line1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0%;
+}
+
+.line1 p {
+  margin-right: 7%;
+  font-size: 12px;
+}
+
+.line1 span {
+  font-size: 14px;
+  color: $textColor;
+}

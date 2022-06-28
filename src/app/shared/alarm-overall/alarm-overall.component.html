@@ -1,0 +1,84 @@
+
+  <div class="lineBar">
+    <div class="head ">
+      <div class="part1"><p>Stations Activates Overview</p></div>
+
+      <div class="part3">
+       <p> <i class="fa-solid fa-ellipsis"></i> </p>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-3 text-center">
+        <p-chart type="pie" [data]="data" [height]="100"></p-chart>
+        <p>Alarm Rate</p>
+      </div>
+
+      <div class="col-5">
+        <!-- <table class="datesTable">
+          <caption>Frequency</caption>
+          <tr>
+            <span class="period">Today</span>
+            <p>3 Times</p>
+            <span class="period">|</span>
+            <p>10 min</p>
+          </tr>
+          <tr>
+            <span class="period">Yesterday</span>
+            <p>4 Times</p>
+            <span class="period">|</span>
+            <p>20 min</p>
+          </tr>
+          <tr>
+            <span class="period">Week</span>
+            <p>5 Times</p>
+            <span class="period">|</span>
+            <p>12 min</p>
+          </tr>
+        </table> -->
+
+        <div class="freqency">
+          <p>Frequency</p>
+
+          <div class="myTable row" *ngFor="let time of Frequency">
+            <div class="row ay7aga">
+              <div class="col-3">{{time.period}}</div>
+              <div class="col-4">{{time.time}}</div>
+              <div class="col-1">|</div>
+              <div class="col-4">{{time.min}}</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-4">
+        <table class="datesTable">
+          <caption>Last Occurred</caption>
+          <tr>
+            <span class="period">Date Time</span>
+            <p>23-11-2020</p>
+            <span class="period">|</span>
+            <p>10:20:21</p>
+          </tr>
+          <tr>
+            <span class="period">Compresor</span>
+            <p>Compressor id</p>
+          </tr>
+          <tr>
+            <span class="period">Dispenser</span>
+            <p>Dispenser</p>
+          </tr>
+        </table>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+

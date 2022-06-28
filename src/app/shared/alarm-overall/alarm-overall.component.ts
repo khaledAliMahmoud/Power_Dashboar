@@ -1,16 +1,39 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-station-details1',
-  templateUrl: './station-details1.component.html',
-  styleUrls: ['./station-details1.component.scss'],
+  selector: 'app-alarm-overall',
+  templateUrl: './alarm-overall.component.html',
+  styleUrls: ['./alarm-overall.component.scss']
 })
-export class StationDetails1Component {
-  active: string = 'finance';
-  activeIcon: string = 'Icon1';
-  activeBarLink: string = 'TEMORETURE';
-  showKpi:boolean = false
+export class AlarmOverallComponent implements OnInit {
+
   data: any;
+  Frequency:any[] = [
+    {
+      period: "Today",
+      time: "3 times",
+      min: "10 min"
+
+    }
+    ,
+
+    {
+      period: "Yesterday",
+      time: "4 times",
+      min: "20 min"
+
+    }
+
+    ,
+
+    {
+      period: "Last Week",
+      time: "5 times",
+      min: "12 min"
+
+    }
+
+]
 
   constructor() {
       this.data = {
@@ -32,20 +55,7 @@ export class StationDetails1Component {
           };
   }
 
-  activeBtn(data) {
-    this.active = data;
+  ngOnInit(): void {
   }
 
-  IconBtn(data) {
-    this.activeIcon = data;
-  }
-
-  linkBar(data) {
-    this.activeBarLink = data;
-    if(this.activeBarLink == "TEMORETURE"){
-      this.showKpi = false;
-    }else{
-      this.showKpi = true;
-    }
-  }
 }

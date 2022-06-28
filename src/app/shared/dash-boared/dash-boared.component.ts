@@ -9,7 +9,8 @@ export class DashBoaredComponent implements OnInit {
 
   shot:string = "Graph" ;
   showStations:boolean = false;
-  showBarchart:boolean = false;
+  showBarchart:boolean = true;
+  station:number[] = [1,2,3]
 
   constructor() { }
 

@@ -46,6 +46,12 @@ import { StationDetails1Component } from './shared/station-details1/station-deta
 import { StationDetails2Component } from './shared/station-details2/station-details2.component';
 import { RadarComponent } from './shared/radar/radar.component';
 import { OperationTableComponent } from './shared/operation-table/operation-table.component';
+import { StasionModulesComponent } from './shared/stasion-modules/stasion-modules.component';
+import { DispenserDetailsComponent } from './shared/dispenser-details/dispenser-details.component';
+import { NotificationContentComponent } from './shared/notification-content/notification-content.component';
+import { AlarmOverallComponent } from './shared/alarm-overall/alarm-overall.component';
+import { AlarmStateComponent } from './shared/alarm-state/alarm-state.component';
+import { AlarmChartsComponent } from './shared/alarm-charts/alarm-charts.component';
 
 
 @NgModule({
@@ -74,6 +80,12 @@ import { OperationTableComponent } from './shared/operation-table/operation-tabl
     StationDetails2Component,
     RadarComponent,
     OperationTableComponent,
+    StasionModulesComponent,
+    DispenserDetailsComponent,
+    NotificationContentComponent,
+    AlarmOverallComponent,
+    AlarmStateComponent,
+    AlarmChartsComponent,
   ],
   imports: [
     BrowserModule,

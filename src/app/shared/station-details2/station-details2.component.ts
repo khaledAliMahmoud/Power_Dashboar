@@ -7,25 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StationDetails2Component implements OnInit {
 
-  active:string = "finance" ;
-  activeIcon:string = "Icon1";
+  activeIcon:string = "Icon2";
   activeBarLink:string = "Compressor";
+  showStations:boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  activeBtn(data){
-    this.active = data
-  }
-
   IconBtn(data){
-    this.activeIcon = data
+    this.activeIcon = data;
   }
 
   linkBar(data){
-    this.activeBarLink = data
+    this.activeBarLink = data;
+
+    if(this.activeBarLink == "Compressor"){
+      this.showStations = false;
+    }else{
+      this.showStations = true;
+    }
+
   }
 
 }
