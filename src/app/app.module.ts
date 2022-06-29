@@ -52,6 +52,7 @@ import { NotificationContentComponent } from './shared/notification-content/noti
 import { AlarmOverallComponent } from './shared/alarm-overall/alarm-overall.component';
 import { AlarmStateComponent } from './shared/alarm-state/alarm-state.component';
 import { AlarmChartsComponent } from './shared/alarm-charts/alarm-charts.component';
+import { ElementTableComponent } from './shared/element-table/element-table.component';
 
 
 @NgModule({
@@ -86,6 +87,7 @@ import { AlarmChartsComponent } from './shared/alarm-charts/alarm-charts.compone
     AlarmOverallComponent,
     AlarmStateComponent,
     AlarmChartsComponent,
+    ElementTableComponent,
   ],
   imports: [
     BrowserModule,

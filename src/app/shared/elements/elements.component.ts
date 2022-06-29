@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ElementsComponent implements OnInit {
 
+  activeTab:string = "tab1";
+
   constructor() { }
+
+  activeTabsBtn(data){
+    this.activeTab = data
+  }
 
   ngOnInit(): void {
   }
