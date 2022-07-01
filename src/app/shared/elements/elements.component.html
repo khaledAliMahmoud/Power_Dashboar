@@ -36,7 +36,25 @@
 
 <!-- ==============================Roof====================================== -->
 
-<div class="elementCrud">
+<div class="elementCrud" *ngIf="activeTab == 'tab1' ">
+
+  <app-element-table></app-element-table>
+
+</div>
+
+<div class="elementCrud" *ngIf="activeTab == 'tab2' ">
+
+  <app-element-table></app-element-table>
+
+</div>
+
+<div class="elementCrud" *ngIf="activeTab == 'tab3' ">
+
+  <app-element-table></app-element-table>
+
+</div>
+
+<div class="elementCrud" *ngIf="activeTab == 'tab4' ">
 
   <app-element-table></app-element-table>
 

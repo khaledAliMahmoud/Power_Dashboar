@@ -20,7 +20,6 @@ export class LogInComponent implements OnInit {
   })
 
   loginBtn(data:FormGroup){
-    console.log(data.value);
     localStorage.setItem('user' , JSON.stringify(data.value) )
     // this._LoggedoutService.loggedOut = false
     this._Router.navigate(['/home'])
