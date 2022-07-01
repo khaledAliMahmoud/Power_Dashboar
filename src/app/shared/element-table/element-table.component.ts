@@ -1,13 +1,20 @@
 import { ProductserviceService } from './../../productservice.service';
-import { Product } from './../../product';
 import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/app/product';
 import { ConfirmationService } from 'primeng/api';
 import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-element-table',
   templateUrl: './element-table.component.html',
-  styleUrls: ['./element-table.component.scss']
+  styleUrls: ['./element-table.component.scss'],
+  styles: [`
+  :host ::ng-deep .p-dialog .product-image {
+      width: 150px;
+      margin: 0 auto 2rem auto;
+      display: block;
+  }
+`]
 })
 export class ElementTableComponent implements OnInit {
 

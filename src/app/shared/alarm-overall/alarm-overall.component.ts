@@ -35,6 +35,18 @@ export class AlarmOverallComponent implements OnInit {
 
 ]
 
+  occurredtime:any[] = [
+
+    {
+      dateTime: "Today",
+      time: "23-11-2020",
+      min: "10:20:21",
+      Compresor : "Compresor",
+      CompresorId : "Compresor Id",
+      Dispenser : "Dispenser"
+    }
+  ]
+
   constructor() {
       this.data = {
           labels: [],

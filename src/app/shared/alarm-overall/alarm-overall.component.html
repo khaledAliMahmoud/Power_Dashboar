@@ -1,5 +1,5 @@
 
-  <div class="lineBar">
+  <div class="overallPage">
     <div class="head ">
       <div class="part1"><p>Stations Activates Overview</p></div>
 
@@ -16,27 +16,6 @@
       </div>
 
       <div class="col-5">
-        <!-- <table class="datesTable">
-          <caption>Frequency</caption>
-          <tr>
-            <span class="period">Today</span>
-            <p>3 Times</p>
-            <span class="period">|</span>
-            <p>10 min</p>
-          </tr>
-          <tr>
-            <span class="period">Yesterday</span>
-            <p>4 Times</p>
-            <span class="period">|</span>
-            <p>20 min</p>
-          </tr>
-          <tr>
-            <span class="period">Week</span>
-            <p>5 Times</p>
-            <span class="period">|</span>
-            <p>12 min</p>
-          </tr>
-        </table> -->
 
         <div class="freqency">
           <p>Frequency</p>
@@ -55,23 +34,21 @@
       </div>
 
       <div class="col-4">
-        <table class="datesTable">
-          <caption>Last Occurred</caption>
-          <tr>
-            <span class="period">Date Time</span>
-            <p>23-11-2020</p>
-            <span class="period">|</span>
-            <p>10:20:21</p>
-          </tr>
-          <tr>
-            <span class="period">Compresor</span>
-            <p>Compressor id</p>
-          </tr>
-          <tr>
-            <span class="period">Dispenser</span>
-            <p>Dispenser</p>
-          </tr>
-        </table>
+
+        <div class="occurred">
+          <p>Last Occurred</p>
+
+          <div class="myTable row" *ngFor="let time of occurredtime">
+            <div class="row occurredtime">
+ <div class="col-md-12 occInfo"> <p>{{time.dateTime}}</p> <p>{{time.time}}</p> <p>|</p> <p>{{time.min}}</p> </div>
+ <div class="col-md-12 occInfo"> <p>{{time.Compresor}}</p>  <p>{{time.CompresorId}}</p> </div>
+ <div class="col-md-12 occInfo"> <p>{{time.Dispenser}}</p> <p>{{time.Dispenser}}</p> </div>
+
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
 

@@ -1,0 +1,89 @@
+{
+	"data": [
+		{
+			"id": "1000",
+			"code": "f230fh0g3",
+			"name": "Name",
+			"description": "Lorem Ipsum is simply dummy text of the printing...",
+			"image": "bamboo-watch.jpg",
+			"price": 1000,
+			"category": "2 Street, City, Country",
+			"quantity": 24,
+			"inventoryStatus": "INSTOCK",
+			"rating": "Lorem Ipsum is simply dummy text of the printing..."
+		},
+		{
+			"id": "1001",
+			"code": "nvklal433",
+			"name": "Name",
+			"description": "Product Description",
+			"image": "black-watch.jpg",
+			"price": 1000,
+			"category": "2 Street, City, Country",
+			"quantity": 61,
+			"inventoryStatus": "INSTOCK",
+			"rating": 4
+		},
+		{
+			"id": "1002",
+			"code": "zz21cz3c1",
+			"name": "Name",
+			"description": "Product Description",
+			"image": "blue-band.jpg",
+			"price": 1000,
+			"category": "2 Street, City, Country",
+			"quantity": 2,
+			"inventoryStatus": "LOWSTOCK",
+			"rating": 3
+		},
+		{
+			"id": "1003",
+			"code": "244wgerg2",
+			"name": "Name",
+			"description": "Product Description",
+			"image": "blue-t-shirt.jpg",
+			"price": 1000,
+			"category": "2 Street, City, Country",
+			"quantity": 25,
+			"inventoryStatus": "INSTOCK",
+			"rating": 5
+		},
+		{
+			"id": "1004",
+			"code": "h456wer53",
+			"name": "Name",
+			"description": "Product Description",
+			"image": "bracelet.jpg",
+			"price": 1000,
+			"category": "2 Street, City, Country",
+			"quantity": 73,
+			"inventoryStatus": "INSTOCK",
+			"rating": 4
+		},
+		{
+			"id": "1005",
+			"code": "av2231fwg",
+			"name": "Name",
+			"description": "Product Description",
+			"image": "brown-purse.jpg",
+			"price": 1000,
+			"category": "2 Street, City, Country",
+			"quantity": 0,
+			"inventoryStatus": "OUTOFSTOCK",
+			"rating": 4
+		},
+		{
+			"id": "1006",
+			"code": "bib36pfvm",
+			"name": "Name",
+			"description": "Product Description",
+			"image": "chakra-bracelet.jpg",
+			"price": 1000,
+			"category": "2 Street, City, Country",
+			"quantity": 5,
+			"inventoryStatus": "LOWSTOCK",
+			"rating": 3
+		}
+
+	]
+}

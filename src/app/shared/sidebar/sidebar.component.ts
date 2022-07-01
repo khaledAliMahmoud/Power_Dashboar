@@ -1,3 +1,4 @@
+import { LoggedoutService } from './../../loggedout.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _LoggedoutService:LoggedoutService) { }
+
 
   ngOnInit(): void {
+  }
+
+  logOutBtn(){
+    // this._LoggedoutService.loggedOut = true
+    localStorage.clear()
   }
 
 }

@@ -73,8 +73,8 @@ export class ProductserviceService {
             price: this.generatePrice(),
             quantity: this.generateQuantity(),
             category: "Product Category",
-            inventoryStatus: this.generateStatus(),
-            rating: this.generateRating()
+            // inventoryStatus: this.generateStatus(),
+            // rating: 'Lorem Ipsum is simply dummy text of the printing...'
         };
 
         product.image = product.name.toLocaleLowerCase().split(/[ ,]+/).join('-')+".jpg";;
@@ -108,8 +108,8 @@ export class ProductserviceService {
         return this.status[Math.floor(Math.random() * Math.floor(3))];
     }
 
-    generateRating() {
-        return Math.floor(Math.random() * Math.floor(5)+1);
-    }
+    // generateRating() {
+    //     return Math.floor(Math.random() * Math.floor(5)+1);
+    // }
 
 }

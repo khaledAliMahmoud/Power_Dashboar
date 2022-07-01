@@ -1,0 +1,15 @@
+@import "../../../assets/scss/varibles.scss";
+
+.loginPage{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $textColor;
+}
+
+.loginForm{
+  width: 50%;
+  padding: 3%;
+}

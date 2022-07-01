@@ -1,3 +1,4 @@
+import { ProtectionGuard } from './protection.guard';
 import { OperationComponent } from './shared/operation/operation.component';
 import { LineChartComponent } from './shared/line-chart/line-chart.component';
 import { ProgressChartComponent } from './shared/progress-chart/progress-chart.component';
@@ -17,14 +18,12 @@ import { NotFoundComponent } from './shared/not-found/not-found.component';
 import { ElementsComponent } from './shared/elements/elements.component';
 
 const routes: Routes = [
-  {path:"home", component:HomeComponent},
-  {path:"control", component:ControlRoomComponent},
-  {path:"settings", component:SettingsComponent},
-  {path:"notifications", component:NotificationsComponent},
-  {path:"elements", component:ElementsComponent},
-  {path:"dashboared", component:DashBoaredComponent},
+  {path:"home", canActivate:[ProtectionGuard] ,component:HomeComponent},
+  {path:"control", canActivate:[ProtectionGuard] , component:ControlRoomComponent},
+  {path:"notifications", canActivate:[ProtectionGuard] ,component:NotificationsComponent},
+  {path:"elements", canActivate:[ProtectionGuard] ,component:ElementsComponent},
+  {path:"dashboared", canActivate:[ProtectionGuard] ,component:DashBoaredComponent},
   {path:"login", component:LogInComponent},
-  {path:"logup", component:LogUpComponent},
   {path:"logout", component:LogOutComponent},
   {path:"**", component:NotFoundComponent}
 ];

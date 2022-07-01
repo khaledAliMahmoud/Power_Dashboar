@@ -1,7 +1,7 @@
-<div class="page">
+<div class="page" *ngIf="pageUrl !== '/login'">
   <div class="sideBar">
     <app-sidebar></app-sidebar>
-    
+
   </div>
   <div class="content">
     <div class=" navBar">
@@ -12,4 +12,10 @@
       <router-outlet></router-outlet>
     </div>
   </div>
+</div>
+
+<div class="logIn" *ngIf="pageUrl == '/login'">
+
+<app-log-in></app-log-in>
+
 </div>

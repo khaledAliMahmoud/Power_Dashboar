@@ -1,1 +1,29 @@
-<p>log-in works!</p>
+<div class="loginPage">
+
+  <div class="loginForm">
+
+<form [formGroup]="loginForm" (ngSubmit)="loginBtn(loginForm)">
+
+<input type="text" formControlName="user_name" class="form-control my-2" placeholder="User Name">
+<div class="alert alert-danger" *ngIf="loginForm.get('user_name').errors && loginForm.get('user_name').touched">
+  <p>User Name Is Required</p>
+  <p>User Name MinLength Is 3</p>
+  <p>User Name MaxLength Is 10</p>
+</div>
+
+<input type="password" formControlName="password" class="form-control my-2" placeholder="Password">
+<div class="alert alert-danger" *ngIf="loginForm.get('password').errors && loginForm.get('password').touched">
+  <p>Password Is Required</p>
+  <p>Password Must start with Capital Character</p>
+  <p>Password Contain only letters</p>
+  <p>Password MaxLength Is 10</p>
+</div>
+
+<button [disabled]="loginForm.invalid" type="submit" class="btn btn-info">Log In</button>
+
+</form>
+
+</div>
+
+
+</div>
