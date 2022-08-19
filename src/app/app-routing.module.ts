@@ -25,7 +25,7 @@ const routes: Routes = [
   {path:"dashboared", canActivate:[ProtectionGuard] ,component:DashBoaredComponent},
   {path:"login", component:LogInComponent},
   {path:"logout", component:LogOutComponent},
-  {path:"**", component:NotFoundComponent}
+  {path:"**", component:HomeComponent}
 ];
 
 @NgModule({
